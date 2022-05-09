@@ -94,6 +94,7 @@ async function* parseOsmBlock(blocks: AsyncGenerator<OsmBlock>) {
     for await (const raw of blocks) {
         const pbf = new Pbf(raw.data);
         if (raw.type === 'OSMHeader') {
+            // TODO Emit header info
             const block = HeaderBlock.read(pbf);
             yield [];
         } else if (raw.type === 'OSMData') {
