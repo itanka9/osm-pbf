@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "moduleResolution": "node",
+    "lib": ["dom", "es6"],
+    "sourceMap": true,
+    "noImplicitAny": false,
+    "strictNullChecks": true,
+    "noEmitHelpers": true,
+    "importHelpers": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitThis": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+    "stripInternal": true,
+    "downlevelIteration": true
+  },
+  "exclude": ["node_modules", "dist"]
+}

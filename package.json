@@ -1,0 +1,30 @@
+{
+  "name": "osm-pbf",
+  "version": "0.0.1",
+  "description": "osm.pbf file format parser for node.js and browser",
+  "main": "dist/parser.js",
+  "types": "types/parser.d.ts",
+  "scripts": {
+    "build": "npm run proto && npm run lib && npm run types",
+    "lib": "parcel build src/parser.ts",
+    "types": "tsc src/*.ts --declaration --allowJs --emitDeclarationOnly --downlevelIteration --outDir types",
+    "proto": "pbf ./proto/fileformat.proto > ./src/fileformat.js && pbf ./proto/osmformat.proto > ./src/osmformat.js",
+    "prettier": "prettier --check .",
+    "prettier:fix": "prettier --write ."
+  },
+  "keywords": ["node", "browser", "osm", "pbf", "osm.pbf"],
+  "author": "Michel Beloshitsky <itano@yandex.ru>",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^17.0.31",
+    "@types/pbf": "^3.0.2",
+    "parcel-bundler": "^1.12.5",
+    "prettier": "^2.6.2",
+    "typescript": "^4.6.4"
+  },
+  "dependencies": {
+    "fflate": "^0.7.3",
+    "pbf": "^3.2.1",
+    "tslib": "^2.4.0"
+  }
+}

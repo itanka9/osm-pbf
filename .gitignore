@@ -1,0 +1,6 @@
+node_modules
+dist
+.cache
+src/*.js
+types/*.d.ts
+.DS_Store
