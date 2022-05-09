@@ -1,6 +1,6 @@
 {
   "name": "osm-pbf",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "osm.pbf file format parser for node.js and browser",
   "main": "dist/parser.js",
   "types": "types/parser.d.ts",
