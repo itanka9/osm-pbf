@@ -14,6 +14,11 @@
   },
   "keywords": ["node", "browser", "osm", "pbf", "osm.pbf"],
   "author": "Michel Beloshitsky <itano@yandex.ru>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/itanka9/osm-pbf.git"
+  },
+  "homepage": "https://github.com/itanka9/osm-pbf",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^17.0.31",
